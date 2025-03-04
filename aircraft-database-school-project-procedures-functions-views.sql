@@ -3,12 +3,6 @@ DELIMITER $$
 /*
   @name: GetAircraft
   @role: Get a specific aircraft
-
-  @parameters: aircraft_id
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Selects a specific aircraft by 'aircraft_id'
 */
 DROP PROCEDURE IF EXISTS GetAircraft $$
@@ -23,12 +17,6 @@ END $$
 /*
   @name: InsertAircraft
   @role: Insert a specific aircraft
-
-  @parameters: aircraft_id
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Inserts a specific aircraft by 'aircraft_id'
 */
 DROP PROCEDURE IF EXISTS InsertAircraft $$
@@ -41,12 +29,6 @@ END $$
 /*
   @name: UpdateAircraft
   @role: Update a specific aircraft
-
-  @parameters: aircraft_id
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Updates a specific aircraft by 'aircraft_id'
 */
 DROP PROCEDURE IF EXISTS UpdateAircraft $$
@@ -61,12 +43,6 @@ END $$
 /*
   @name: DeleteAircraft
   @role: Delete a specific aircraft
-
-  @parameters: aircraft_id
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Deletes a specific aircraft by 'aircraft_id'
 */
 DROP PROCEDURE IF EXISTS DeleteAircraft $$
@@ -79,12 +55,6 @@ END $$
 /*
   @name: GetPriceCategory
   @role: Get a specific PriceCategory
-
-  @parameters: category_id
-
-  @created: 10.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Selects a specific PriceCategory by 'category_id'
 */
 DROP PROCEDURE IF EXISTS GetPriceCategory $$
@@ -99,12 +69,6 @@ END $$
 /*
   @name: InsertPriceCategories
   @role: Insert a specific PriceCategories
-
-  @parameters: category_id
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Inserts a specific PriceCategory by 'category_id'
 */
 DROP PROCEDURE IF EXISTS InsertPriceCategory $$
@@ -121,12 +85,6 @@ END $$
 /*
   @name: UpdatePriceCategory
   @role: Update a specific PriceCategory
-
-  @parameters: PriceCategory_id
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Updates a specific PriceCategory by 'category_id'
 */
 DROP PROCEDURE IF EXISTS UpdatePriceCategory $$
@@ -144,12 +102,6 @@ END $$
 /*
   @name: DeletePriceCategory
   @role: Delete a specific PriceCategory
-
-  @parameters: category_id
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Deletes a specific PriceCategory by 'category_id'
 */
 DROP PROCEDURE IF EXISTS DeletePriceCategory $$
@@ -162,12 +114,6 @@ END $$
 /*
   @name: GetPassengerCount
   @role: Gets the amount of passenger onboard of a plane
-
-  @parameters: flight_code
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Gets the amount of passenger onboard of a plane
 */
 DROP FUNCTION IF EXISTS GetPassengerCount $$
@@ -183,12 +129,6 @@ END $$
 /*
   @name: BookFlight
   @role: Books a flight for one or more passengers
-
-  @parameters: flight_number, flight_date, credit_info, passengers_array
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Books a flight for one or more passengers
 */
 DROP PROCEDURE IF EXISTS BookFlight $$
@@ -260,12 +200,6 @@ DELIMITER ;
 /*
   @name: AircraftsView
   @role: View for aircrafts
-
-  @parameters: None
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: View for aircrafts
 */
 DROP VIEW IF EXISTS AircraftsView;
@@ -277,12 +211,6 @@ SELECT aircraftID, aircraftType, maxNumberOfPassangers,
 /*
   @name: DestinationsView
   @role: View for destinations
-
-  @parameters: None
-
-  @created: 12.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: View for destinations
 */
 DROP VIEW IF EXISTS DestinationsView;
@@ -295,12 +223,6 @@ CREATE VIEW DestinationsView AS
 /*
   @name: PriceCategoriesView
   @role: View for pricecategories
-
-  @parameters: None
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: View for pricecategories
 */
 DROP VIEW IF EXISTS PriceCategoriesView;
@@ -313,12 +235,6 @@ CREATE VIEW PriceCategoriesView AS
 /*
   @name: AirportsView
   @role: View for airports
-
-  @parameters: None
-
-  @created: 10.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: View for airports
 */
 DROP VIEW IF EXISTS AirportsView;
@@ -329,12 +245,6 @@ CREATE VIEW AirportsView AS
 /*
   @name: FlightSchedulesView
   @role: View for FlightSchedules
-
-  @parameters: None
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: View for airports
 */
 DROP VIEW IF EXISTS FlightSchedulesView;
@@ -347,12 +257,6 @@ CREATE VIEW FlightSchedulesView AS
 /*
   @name: before_bookings_insert Trigger
   @role: Stops a booking if a flight is full
-
-  @parameters: None
-
-  @created: 8.11.2015
-  @author: Guðmundur
-  @todo: Nothing
   @description: Stops a booking if a flight is full
 */
 DELIMITER $$
